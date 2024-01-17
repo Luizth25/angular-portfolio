@@ -1,0 +1,30 @@
+.container-header {
+  border: 2px solid red;
+  background-color: #021216;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px #000709;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 8px 20px;
+  width: 100%;
+}
+
+.container-name>h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.container-navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.container-navbar>button {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 16px;
+  font-size: 20px;
+}
