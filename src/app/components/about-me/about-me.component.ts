@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.css',
 })
+//@TODO colocar todos os icones em uma lista e fazer um ngFor para pegar eles
 export class AboutMeComponent {}
