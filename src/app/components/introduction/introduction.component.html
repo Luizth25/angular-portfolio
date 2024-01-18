@@ -1,9 +1,6 @@
 <div class="container-introduction">
   <div class="container-image">
-    <img
-      src="https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600nw-1037719192.jpg"
-      alt=""
-    />
+    <img src="{{ githubUser.avatarUrl }}" alt="" />
   </div>
   <div class="container-info">
     <div class="wrapper">
@@ -23,7 +20,7 @@
           alt="linkedin icon"
         />
       </a>
-      <a target="_blank" href="https://github.com/Luizth25">
+      <a target="_blank" href="{{ githubUser.htmlUrl }}">
         <img
           class="icon"
           src="assets/icons/github-icon.svg"
