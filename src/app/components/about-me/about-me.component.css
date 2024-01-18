@@ -2,9 +2,12 @@
   width: 100%;
   padding: 32px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 24px;
-  background-color: #001323;
+  background-color: #001424;
+  box-shadow: 0 2px 4px rgba(0, 7, 9, 0.5);
+  border: 1px solid #0050A1;
+  border-radius: 4px;
 }
 
 .about-me-info {

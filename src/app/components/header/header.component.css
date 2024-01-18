@@ -1,7 +1,10 @@
 .container-header {
-  background-color: #021216;
+  background-color: #001424;
   border-radius: 4px;
-  box-shadow: 2px 2px 2px #000709;
+  box-shadow: 0 2px 4px rgba(0, 7, 9, 0.5);
+  border: 1px solid #0050A1;
+  border-radius: 4px;
+  /* box-shadow: 0 2px 4px #0050A1; */
 
   display: flex;
   justify-content: space-between;
