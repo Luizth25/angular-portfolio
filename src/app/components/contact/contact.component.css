@@ -22,17 +22,10 @@
   border-radius: 4px;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding-left: 4px;
-}
-
 .container-contact-header {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 4px;
   max-width: 700px;
   width: 100%;
 }

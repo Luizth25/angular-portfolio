@@ -10,22 +10,25 @@
   display: flex;
   padding: 20px;
   width: 100%;
-
 }
 
 @keyframes slideInFromTop {
   from {
-    transform: translateY(-100%);
+    transform: translateX(-100%);
     opacity: 0;
   }
 
   to {
-    transform: translateY(0);
-    opacity: 1;
+    transform: translateX(-50%);
+    opacity: 50%;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 100%;
   }
 }
 
-/* Aplica a animação à classe slide-in */
 .animated-element {
-  animation: slideInFromTop 1s ease-in-out;
+  animation: slideInFromTop 1.5s ease-in-out;
 }

@@ -18,29 +18,3 @@
   max-width: 800px;
   gap: 16px;
 }
-
-.container-hard-skills {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.container-hard-skills-logo {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.icon-wrapper>img {
-  border-radius: 10px;
-  width: 60px;
-  background-color: aliceblue;
-}
-
-
-.icon-wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}

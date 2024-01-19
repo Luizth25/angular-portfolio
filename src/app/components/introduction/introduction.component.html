@@ -3,30 +3,18 @@
     <img src="{{ githubUser.avatarUrl }}" alt="" />
   </div>
   <div class="container-info">
-    <div class="wrapper">
-      <h1>Olá</h1>
-      <p>
-        Me chamo Luiz Felipe Thomaz Preto. Sou estudante de
-        <strong>Sistemas de informação</strong>, desenvolvedor
-        <strong>Front-end Junior</strong>, apaixonado por jogos, músicas e pixel
-        arts.
-      </p>
-    </div>
-    <div class="container-contatc">
-      <a target="_blank" href="https://www.linkedin.com/in/luiz-preto/">
-        <img
-          class="icon"
-          src="assets/icons/linkedin-icon.svg"
-          alt="linkedin icon"
-        />
-      </a>
-      <a target="_blank" href="{{ githubUser.htmlUrl }}">
-        <img
-          class="icon"
-          src="assets/icons/github-icon.svg"
-          alt="github icon"
-        />
-      </a>
+    <app-info-panel title="Olá" [firstParagraph]="firstParagraphText" />
+    <div class="container-contact">
+      <app-contact-icon
+        iconName="linkedIn"
+        iconLink="https://www.linkedin.com/in/luiz-preto/"
+        iconImage="assets/icons/linkedin-icon.svg"
+      />
+      <app-contact-icon
+        iconName="github"
+        iconLink="{{ githubUser.htmlUrl }}"
+        iconImage="assets/icons/github-icon.svg"
+      />
     </div>
   </div>
 </div>

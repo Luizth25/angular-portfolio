@@ -1,0 +1,33 @@
+.container-hard-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container-hard-skills-logo {
+  display: flex;
+  background-color: #001C36;
+  border: 1px solid #000709;
+  border-radius: 8px;
+  padding: 12px;
+
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.icon-wrapper>img {
+  border-radius: 10px;
+  width: 50px;
+  background-color: #E5E5E5;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  flex-direction: column;
+  justify-content: center;
+}

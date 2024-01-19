@@ -21,7 +21,7 @@
 
 .container-lists-items {
   background-color: #001C36;
-  border: 2px solid #004D99;
+  border: 1px solid #004D99;
   box-shadow: 0 2px 4px rgba(0, 7, 9, 0.5);
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@
 
 .container-lists-items:hover {
   background-color: #003366;
-  border: 2px solid #66B2FF;
+  border: 1px solid #66B2FF;
 }
 
 

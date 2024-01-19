@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { GithubService } from '../../services/github.service';
 import { TUserRepos } from '../../models/userData';
 import { CommonModule } from '@angular/common';
+import { InfoPanelComponent } from '../../shared/info-panel/info-panel.component';
+import { TechnologyListComponent } from '../technology-list/technology-list.component';
 
 @Component({
   selector: 'app-projects-list',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, InfoPanelComponent],
   templateUrl: './projects-list.component.html',
   styleUrl: './projects-list.component.css',
 })

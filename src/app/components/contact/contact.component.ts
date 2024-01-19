@@ -5,11 +5,13 @@ import {
   LottieComponent,
   provideLottieOptions,
 } from 'ngx-lottie';
+import { InfoPanelComponent } from '../../shared/info-panel/info-panel.component';
+import { ContactIconComponent } from '../../shared/contact-icon/contact-icon.component';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [LottieComponent],
+  imports: [LottieComponent, InfoPanelComponent, ContactIconComponent],
   providers: [
     provideLottieOptions({
       player: () => import('lottie-web'),
