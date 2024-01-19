@@ -27,8 +27,8 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  padding: 8px 0;
-
+  padding: 8px;
+  text-align: center;
   border-radius: 8px;
   width: 100%;
   max-width: 700px;
@@ -43,6 +43,17 @@
 .project-link {
   text-decoration: none;
   font-size: 20px;
+}
+
+.container-topic-list {
+  list-style: none;
+  gap: 16px;
+  display: flex;
+}
+
+.container-topic-list>li {
+  display: flex;
+  border-bottom: 1px solid #FFC107;
 }
 
 @keyframes fadeIn {

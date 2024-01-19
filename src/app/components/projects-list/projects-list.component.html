@@ -4,17 +4,22 @@
     Esse são alguns dos meus projetos pessoais que estão hospedados na netlify
   </p>
   <ul class="container-lists">
-    <li class="container-lists-items animated-element">
-      <a class="project-link" href="#"> Nome dos projetos </a>
-      <p>project description</p>
-    </li>
-    <li class="container-lists-items animated-element">
-      <a class="project-link" href="#"> Nome dos projetos </a>
-      <p>project description</p>
-    </li>
-    <li class="container-lists-items animated-element">
-      <a class="project-link" href="#"> Nome dos projetos </a>
-      <p>project description</p>
+    <li
+      *ngFor="let repository of githubUserRepos"
+      class="container-lists-items animated-element"
+    >
+      <a
+        class="project-link"
+        href="{{ repository.homepage }}"
+        target="_blank"
+        >{{ repository.name }}</a
+      >
+      <p>{{ repository.description }}</p>
+      <ul class="container-topic-list">
+        <li *ngFor="let topic of repository.topics">
+          {{ topic }}
+        </li>
+      </ul>
     </li>
   </ul>
 </div>
