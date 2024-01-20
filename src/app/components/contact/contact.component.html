@@ -2,20 +2,18 @@
   <div class="container-image">
     <ng-lottie [options]="options"></ng-lottie>
   </div>
-  <div>
-    <div class="container-contact-header">
-      <app-info-panel
-        title="Contato"
-        firstParagraph="Aqui são uma das formar de entrar em contato comigo 😁"
+  <div class="container-contact-header">
+    <app-info-panel
+      title="Contato"
+      firstParagraph="Aqui são uma das formar de entrar em contato comigo 😁"
+    />
+    <div class="container-contact-email">
+      <app-contact-icon
+        iconName="gmail"
+        iconImage="assets/icons/gmail-icon.svg"
+        iconLink="mailto:luizftp25@gmail.com"
+        iconDescription="luizftp25&#64;gmail.com"
       />
-      <div class="container-contact-email">
-        <app-contact-icon
-          iconName="gmail"
-          iconImage="assets/icons/gmail-icon.svg"
-          iconLink="mailto:luizftp25@gmail.com"
-          iconDescription="luizftp25&#64;gmail.com"
-        />
-      </div>
     </div>
   </div>
 </div>

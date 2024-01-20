@@ -5,4 +5,10 @@
   padding-left: 4px;
   width: 100%;
   max-width: 800px;
+
+  @media (max-width: 800px) {
+    text-align: center;
+    align-items: center;
+  }
+
 }

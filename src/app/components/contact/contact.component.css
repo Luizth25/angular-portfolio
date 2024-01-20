@@ -4,12 +4,22 @@
   align-items: center;
   gap: 24px;
   padding: 20px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+
 }
 
 .container-contact-email {
   display: flex;
   align-items: center;
   gap: 8px;
+
+  @media (max-width: 800px) {
+    justify-content: center;
+  }
+
 }
 
 .icon {
@@ -20,6 +30,14 @@
   width: 200px;
   height: 200px;
   border-radius: 4px;
+
+
+  @media (max-width: 800px) {
+    width: 150px;
+    height: 150px;
+  }
+
+
 }
 
 .container-contact-header {

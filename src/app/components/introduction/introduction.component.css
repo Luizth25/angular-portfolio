@@ -4,6 +4,12 @@
   display: flex;
   gap: 24px;
   padding: 20px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
 
 @keyframes moveBorder {
@@ -26,6 +32,7 @@
   align-items: center;
   background: linear-gradient(to left, #6f42c1 0%, #133f61 100%);
   padding: 2px;
+  width: 200px;
   border-radius: 20px;
 }
 
@@ -47,6 +54,12 @@
   gap: 12px;
   max-width: 700px;
   width: 100%;
+
+  @media (max-width: 800px) {
+    text-align: center;
+    align-items: center;
+  }
+
 }
 
 .container-contact {

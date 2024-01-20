@@ -11,6 +11,11 @@
 
   padding: 8px 20px;
   width: 100%;
+
+  @media (max-width: 475px) {
+    flex-direction: column;
+  }
+
 }
 
 .container-name>h1 {

@@ -47,13 +47,20 @@
 
 .container-topic-list {
   list-style: none;
-  gap: 16px;
+  gap: 8px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .container-topic-list>li {
   display: flex;
-  border-bottom: 1px solid #FFC107;
+  background-color: #66B2FF;
+  color: #000709;
+  border: 1px solid #000709;
+  border-radius: 10px;
+  padding: 4px;
+  align-items: center;
 }
 
 @keyframes fadeIn {
