@@ -15,6 +15,7 @@ export class AboutMeComponent {
   firstParagraphText: string = `
     Estudo desenvolvimento desde 2021, em setembro de 2022 tive a minha primeira oportunidade de participar de um treinamento para virar <strong>front-end trainee</strong>.
     O treinamento teve fim em setembro de 2022, aonde eu conseguir passar e também minha primeira vaga como desenvolvedor front-end. Atualmente busco recolocação profissional.
+    Com 1 ano e 4 meses de experiência na área, tenho trabalhado com uma variedade de tecnologias, frameworks e bibliotecas para criar interfaces responsivas e atraentes.
     Utilizo em meus projetos principalmente tecnologias para o desenvolvimento <strong>front-end</strong>, com foco no <strong>javascript</strong>, <strong>typescript</strong>, <strong>React.js</strong>
     e <strong>Angular</strong>. Mas também dei um start nos meus estudos <strong>back-end</strong> com <strong>nodejs</strong> e <strong>c#</strong>.
   `;
