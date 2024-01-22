@@ -1,0 +1,9 @@
+<div class="container-hard-skills">
+  <h1>Hard Skills</h1>
+  <ul class="container-hard-skills-logo">
+    <li *ngFor="let technology of technologyList" class="icon-wrapper">
+      <img src="{{ technology.icon }}" alt="{{ technology.name }}" />
+      <p>{{ technology.name }}</p>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,21 @@
+.container-about-me {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-border-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0, 7, 9, 0.5);
+
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  padding: 32px;
+  width: 100%;
+
+}
+
+/* Responsivo */
+
+.container-about-me {
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}

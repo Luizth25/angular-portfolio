@@ -1,12 +1,30 @@
+/* Tema */
+@import url(./theme.css);
+
+/* CSS Padrão */
 * {
   border: 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: aliceblue;
+  color: #E5E5E5;
 }
 
 body {
-  background-color: #000709;
+  background-color: var(--primary-color);
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  border: 2px solid var(--primary-border-color);
 }

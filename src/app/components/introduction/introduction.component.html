@@ -1,0 +1,20 @@
+<div class="container-introduction">
+  <div class="container-image">
+    <img src="{{ githubUser.avatarUrl }}" alt="" />
+  </div>
+  <div class="container-info">
+    <app-info-panel title="Olá" [firstParagraph]="firstParagraphText" />
+    <div class="container-contact">
+      <app-contact-icon
+        iconName="linkedIn"
+        iconLink="https://www.linkedin.com/in/luiz-preto/"
+        iconImage="assets/icons/linkedin-icon.svg"
+      />
+      <app-contact-icon
+        iconName="github"
+        iconLink="{{ githubUser.htmlUrl }}"
+        iconImage="assets/icons/github-icon.svg"
+      />
+    </div>
+  </div>
+</div>

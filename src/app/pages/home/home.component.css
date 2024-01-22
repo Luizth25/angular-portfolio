@@ -1,0 +1,36 @@
+.container-introduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.container-contact {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+}
+
+
+/* Animação */
+@keyframes slideInFromTop {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(-50%);
+    opacity: 50%;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+
+.animated-element {
+  animation: slideInFromTop 1.5s ease-in-out;
+}

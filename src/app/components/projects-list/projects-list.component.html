@@ -1,0 +1,26 @@
+<div class="container-projects-lists">
+  <app-info-panel
+    title=" Meus projetos"
+    firstParagraph="Esse são alguns dos meus projetos pessoais que estão hospedados na Netlify"
+  />
+
+  <ul class="container-lists">
+    <li
+      class="container-lists-items animated-element"
+      *ngFor="let repository of githubUserRepos"
+    >
+      <a
+        class="project-link"
+        href="{{ repository.homepage }}"
+        target="_blank"
+        >{{ repository.name }}</a
+      >
+      <p>{{ repository.description }}</p>
+      <ul class="container-topic-list">
+        <li *ngFor="let topic of repository.topics">
+          {{ topic }}
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

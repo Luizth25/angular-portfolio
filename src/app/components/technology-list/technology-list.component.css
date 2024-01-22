@@ -1,0 +1,42 @@
+.container-hard-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container-hard-skills-logo {
+  background-color: var(--tertiary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding: 12px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 60px;
+}
+
+.icon-wrapper>img {
+  background-color: #E5E5E5;
+  border-radius: 10px;
+
+  width: 50px;
+}
+
+/* Responsivo */
+
+.container-hard-skills {
+  @media (max-width: 800px) {
+    align-items: center;
+  }
+}
