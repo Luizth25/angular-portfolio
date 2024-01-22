@@ -2,37 +2,41 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-
-  @media (max-width: 800px) {
-    align-items: center;
-  }
-
 }
 
 .container-hard-skills-logo {
+  background-color: var(--tertiary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+
   display: flex;
-  background-color: #001C36;
-  border: 1px solid #000709;
-  border-radius: 8px;
-  padding: 12px;
-
   flex-wrap: wrap;
-  list-style: none;
   gap: 12px;
-  width: 100%;
+  list-style: none;
+  padding: 12px;
   max-width: 400px;
-}
-
-.icon-wrapper>img {
-  border-radius: 10px;
-  width: 50px;
-  background-color: #E5E5E5;
+  width: 100%;
 }
 
 .icon-wrapper {
   display: flex;
   align-items: center;
-  width: 60px;
   flex-direction: column;
   justify-content: center;
+  width: 60px;
+}
+
+.icon-wrapper>img {
+  background-color: #E5E5E5;
+  border-radius: 10px;
+
+  width: 50px;
+}
+
+/* Responsivo */
+
+.container-hard-skills {
+  @media (max-width: 800px) {
+    align-items: center;
+  }
 }

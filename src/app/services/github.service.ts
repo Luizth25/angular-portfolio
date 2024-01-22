@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
-
 import { HttpClient } from '@angular/common/http';
-import { TUserDataRaw, TUserReposRaw } from '../models/userData';
+
 import { Observable } from 'rxjs';
 
+import { TUserDataRaw, TUserReposRaw } from '../models/userData';
 @Injectable({
   providedIn: 'root',
 })
 export class GithubService {
   private userData: TUserDataRaw | any;
-  private userDataRepo: TUserReposRaw | any;
+  private userRepoData: TUserReposRaw | any;
 
   constructor(private http: HttpClient) {}
 
@@ -22,10 +22,10 @@ export class GithubService {
   }
 
   getUserRepo(): Observable<TUserReposRaw[]> {
-    this.userDataRepo = this.http.get<TUserReposRaw[]>(
+    this.userRepoData = this.http.get<TUserReposRaw[]>(
       'https://api.github.com/users/luizth25/repos'
     );
 
-    return this.userDataRepo;
+    return this.userRepoData;
   }
 }

@@ -1,11 +1,7 @@
+// Tipagem da API
 export type TUserDataRaw = {
   avatar_url: string;
   html_url: string;
-};
-
-export type TUserData = {
-  avatarUrl: string;
-  htmlUrl: string;
 };
 
 export type TUserReposRaw = {
@@ -13,6 +9,12 @@ export type TUserReposRaw = {
   homepage: string;
   name: string;
   topics: string[];
+};
+
+//Tipagem formatada
+export type TUserData = {
+  avatarUrl: string;
+  htmlUrl: string;
 };
 
 export type TUserRepos = {

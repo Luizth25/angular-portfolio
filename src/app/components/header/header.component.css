@@ -1,21 +1,14 @@
 .container-header {
-  background-color: #001424;
-  border-radius: 4px;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
   box-shadow: 0 2px 4px rgba(0, 7, 9, 0.5);
-  border-bottom: 1px solid #0050A1;
-  border-radius: 4px;
+  border-bottom: 1px solid var(--primary-border-color);
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
-
+  justify-content: space-between;
   padding: 8px 20px;
   width: 100%;
-
-  @media (max-width: 475px) {
-    flex-direction: column;
-  }
-
 }
 
 .container-name>h1 {
@@ -34,4 +27,13 @@
   cursor: pointer;
   padding: 16px;
   font-size: 20px;
+}
+
+
+/* Responsivo */
+
+.container-header {
+  @media (max-width: 475px) {
+    flex-direction: column;
+  }
 }
